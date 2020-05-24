@@ -1,2 +1,1 @@
-# vestel-tv-api
- Veestel TV API.
+# Vestel TV API
