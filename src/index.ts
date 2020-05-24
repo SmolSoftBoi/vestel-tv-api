@@ -16,8 +16,14 @@ import { wake } from 'wol';
  */
 export class VestelTv extends EventEmitter {
 
+    /**
+     * DIAL.
+     */
     protected dial?: Dial;
 
+    /**
+     * Follow TV.
+     */
     protected followTv?: FollowTv;
 
     /**
