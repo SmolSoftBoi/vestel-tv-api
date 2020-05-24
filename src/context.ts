@@ -66,6 +66,16 @@ export interface Context {
     followTvPort?: number;
 
     /**
+     * Is network remote?
+     */
+    isNetworkRemote?: boolean;
+
+    /**
+     * Network remote port.
+     */
+    networkRemotePort?: number;
+
+    /**
      * Is wake on LAN?
      */
     isWakeOnLan?: boolean;
