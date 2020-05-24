@@ -1,12 +1,13 @@
 import { EventEmitter } from "events";
 import { isArray } from "util";
 
-import { DEFAULT_WAKE_ON_LAN_TIMEOUT, DEFAULT_FOLLOW_TV_PORT, DIAL_SMART_CENTER_APP } from "./settings";
+import { DEFAULT_WAKE_ON_LAN_TIMEOUT, DEFAULT_FOLLOW_TV_PORT, DIAL_SMART_CENTER_APP, DEFAULT_NETWORK_REMOTE_PORT } from "./settings";
 import { Context } from "./context";
 import { Dial } from "./dial";
 import { SmartCenterDialApp } from "./dialApps/smartCenterDialApp";
 import { SmartCenterKeyCodes } from "./dialApps/SmartCenterKeyCodes";
 import { FollowTv } from "./followtv";
+import { NetworkRemote } from "./networkRemote";
 
 import find from 'local-devices';
 import { wake } from 'wol';
@@ -25,6 +26,11 @@ export class VestelTv extends EventEmitter {
      * Follow TV.
      */
     protected followTv?: FollowTv;
+
+    /**
+     * Network remote.
+     */
+    protected networkRemote?: NetworkRemote;
 
     /**
      * Vestel TV.
@@ -48,15 +54,45 @@ export class VestelTv extends EventEmitter {
             this.checkForDialSmartCenterApp();
         }
 
-        if (this.context.isFollowTv && !this.context.followTvPort) {
+        if (this.context.isFollowTv) {
             if (!this.context.followTvPort) {
                 this.context.followTvPort = DEFAULT_FOLLOW_TV_PORT;
             }
+
             this.followTv = new FollowTv(this.context.host, this.context.followTvPort);
+        }
+
+        if (this.context.isNetworkRemote) {
+            if (!this.context.networkRemotePort) {
+                this.context.networkRemotePort = DEFAULT_NETWORK_REMOTE_PORT;
+            }
+
+            this.networkRemote = new NetworkRemote(this.context.host, this.context.networkRemotePort);
         }
 
         if (this.context.isWakeOnLan && !this.context.wakeOnLanTimeout) {
             this.context.wakeOnLanTimeout = DEFAULT_WAKE_ON_LAN_TIMEOUT;
+        }
+    }
+
+    /**
+     * Get active.
+     */
+    async getActive(): Promise<boolean> {
+        if (!this.context.isNetworkRemote) throw new Error('Network remote is not enabled.');
+        if (!this.networkRemote) throw new Error('Network remote is not initialised.');
+
+        try {
+            await Promise.race([
+                this.networkRemote.connectSocket(),
+                new Promise((resolve, reject) => {
+                    setTimeout(reject, 2000);
+                })
+            ]);
+
+            return true;
+        } catch (error) {
+            return false;
         }
     }
 
