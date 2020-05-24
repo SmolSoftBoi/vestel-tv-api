@@ -101,7 +101,8 @@ export class DiscoverDevices extends EventEmitter {
 
             const tv = new VestelTv(context);
 
-            this.emit('response', tv);
+            this.emit('contextResponse', context);
+            this.emit('tvResponse', tv);
         } catch (error) {
             throw new Error('Error getting DIAL.');
         }
