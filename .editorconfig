@@ -1,0 +1,25 @@
+# EditorConfig
+#
+# Copyright © 2017 - 2020 Kristian Matthews. All rights reserved.
+
+root = true
+
+[*]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+# JavaScript, JSON & TypeScript
+[*.{js*,ts}]
+indent_style = space
+index_size = 2
+
+# RC
+[.*rc]
+indent_style = space
+index_size = 2
+
+# Yaml
+[*.{yml,yaml}]
+indent_style = space
