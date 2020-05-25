@@ -42,16 +42,16 @@ export class VestelTv extends EventEmitter {
 
         if (this.context.uuid === '') throw new Error('UUID must be set.');
 
-        if (!this.context.mac) {
-            this.findMac();
-        }
+        if (this.context.isDial) {
+            if (this.context.dialApplicationUrl) {
+                this.dial = new Dial(this.context.dialApplicationUrl);
+            } else {
+                this.context.isDial = false;
+            }
 
-        if (this.context.isDial && this.context.dialApplicationUrl) {
-            this.dial = new Dial(this.context.dialApplicationUrl);
-        }
-
-        if (!this.context.isDialSmartCenterApp) {
-            this.checkForDialSmartCenterApp();
+            if (!this.context.isDialSmartCenterApp) {
+                this.checkForDialSmartCenterApp();
+            }
         }
 
         if (this.context.isFollowTv) {
@@ -76,6 +76,17 @@ export class VestelTv extends EventEmitter {
     }
 
     /**
+     * Discover context.
+     */
+    async discoverContext(): Promise<void> {
+        if (!this.context.mac) {
+            try {
+                this.findMac();
+            } catch (error) {}
+        }
+    }
+
+    /**
      * Get active.
      */
     async getActive(): Promise<boolean> {
@@ -84,7 +95,7 @@ export class VestelTv extends EventEmitter {
 
         try {
             await Promise.race([
-                this.networkRemote.connectSocket(),
+                this.networkRemote.connectSocket(() => {}),
                 new Promise((resolve, reject) => {
                     setTimeout(reject, 2000);
                 })
@@ -206,7 +217,7 @@ export class VestelTv extends EventEmitter {
             this.context.mac = device[0].mac;
             return Promise.resolve(this.context.mac);
         } catch (error) {
-            throw new Error('Error finding device.');
+            throw new Error('Error finding device: ' + this.context.host);
         }
     }
 
