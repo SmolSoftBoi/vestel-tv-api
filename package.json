@@ -24,14 +24,13 @@
     "tv",
     "api"
   ],
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "^14.0.1",
     "@types/node-ssdp": "^3",
     "@typescript-eslint/eslint-plugin": "^2.33",
     "@typescript-eslint/parser": "^2.33",
-    "eslint": "^6.8",
-    "local-devices": "^3",
+    "eslint": "^6.8.0",
+    "local-devices": "^3.2.0",
     "lodash": "^4",
     "node-ssdp": "^4",
     "nodemon": "^2.0.4",
