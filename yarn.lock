@@ -41,14 +41,14 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "18.7.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.1.tgz#352bee64f93117d867d05f7406642a52685cbca6"
-  integrity sha512-GKX1Qnqxo4S+Z/+Z8KKPLpH282LD7jLHWJcVryOflnsnH+BtSDfieR6ObwBMwpnNws0bUK8GI7z0unQf9bARNQ==
+  version "18.7.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.5.tgz#f1c1d4b7d8231c0278962347163656f9c36f3e83"
+  integrity sha512-NcKK6Ts+9LqdHJaW6HQmgr7dT/i3GOHG+pt6BiWv++5SnjtRd4NXeiuN2kA153SjhXPR/AhHIPHPbrsbpUVOww==
 
 "@types/node@^14.0.1":
-  version "14.18.23"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.23.tgz#70f5f20b0b1b38f696848c1d3647bb95694e615e"
-  integrity sha512-MhbCWN18R4GhO8ewQWAFK4TGQdBpXWByukz7cWyJmXhvRuCIaM/oWytGPqVmDzgEnnaIc9ss6HbU5mUi+vyZPA==
+  version "14.18.24"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.24.tgz#406b220dc748947e1959d8a38a75979e87166704"
+  integrity sha512-aJdn8XErcSrfr7k8ZDDfU6/2OgjZcB2Fu9d+ESK8D7Oa5mtsv8Fa8GpcwTA0v60kuZBaalKPzuzun4Ov1YWO/w==
 
 "@typescript-eslint/eslint-plugin@^2.33":
   version "2.34.0"
@@ -792,10 +792,10 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-local-devices@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/local-devices/-/local-devices-3.2.0.tgz#02cbcaa06cb6a66d751b39979ba2190b62d8f163"
-  integrity sha512-JkWPXdFbu0l4nPXtINrcz8fkLA0WLMopmsHLvYsOMLnFx1SUM5cTVlLz6ZXcYMZHzWXoy0pOreKKLzsWBq5muQ==
+local-devices@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/local-devices/-/local-devices-4.0.0.tgz#a7ce01fb5455d4fb649484ccc68ce3a587ca685f"
+  integrity sha512-65EPltZW7bPRTmIiL9yuQcu0Om6dYl4dzRgiIYxl/cUO62FBW09ZpIVtpffXU8vryfGXEXxt68oWK/Kru12FEA==
   dependencies:
     get-ip-range "^2.1.0"
     ip "^1.1.5"
