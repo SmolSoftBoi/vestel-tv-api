@@ -212,7 +212,9 @@ export class VestelTv extends EventEmitter {
      */
     protected async findMac(): Promise<string> {
         try {
-            let device = await find(this.context.host);
+            let device = await find({
+                address: this.context.host
+            });
             if (!isArray(device)) device = [device];
             this.context.mac = device[0].mac;
             return Promise.resolve(this.context.mac);
