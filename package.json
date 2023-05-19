@@ -37,7 +37,7 @@
         "rimraf": "^3.0.2",
         "ts-node": "^8.10.1",
         "typed-rest-client": "^1",
-        "typescript": "^3.9.2",
+        "typescript": "^5.0.4",
         "wol": "^1",
         "xml-js": "^1"
     }
