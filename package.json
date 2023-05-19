@@ -1,44 +1,44 @@
 {
-  "name": "vestel-tv-api",
-  "version": "0.0.1",
-  "description": "Vestel TV API.",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/EpicKris/vestel-tv-api.git"
-  },
-  "bugs": {
-    "url": "https://github.com/EpicKris/vestel-tv-api/issues"
-  },
-  "engines": {
-    "node": ">=10.17.0"
-  },
-  "main": "dist/index.js",
-  "scripts": {
-    "lint": "eslint src/**.ts",
-    "watch": "yarn run build && yarn link && nodemon",
-    "build": "rimraf ./dist && tsc",
-    "prepublishOnly": "yarn run lint && yarn run build"
-  },
-  "keywords": [
-    "vestel",
-    "tv",
-    "api"
-  ],
-  "devDependencies": {
-    "@types/node": "^14.0.1",
-    "@types/node-ssdp": "^3",
-    "@typescript-eslint/eslint-plugin": "^2.33",
-    "@typescript-eslint/parser": "^2.33",
-    "eslint": "^6.8.0",
-    "local-devices": "^4.0.0",
-    "lodash": "^4",
-    "node-ssdp": "^4",
-    "nodemon": "^2.0.4",
-    "rimraf": "^3.0.2",
-    "ts-node": "^8.10.1",
-    "typed-rest-client": "^1",
-    "typescript": "^3.9.2",
-    "wol": "^1",
-    "xml-js": "^1"
-  }
+    "name": "vestel-tv-api",
+    "version": "0.0.1",
+    "description": "Vestel TV API.",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/EpicKris/vestel-tv-api.git"
+    },
+    "bugs": {
+        "url": "https://github.com/EpicKris/vestel-tv-api/issues"
+    },
+    "engines": {
+        "node": ">=14"
+    },
+    "main": "dist/index.js",
+    "scripts": {
+        "lint": "eslint src/**.ts",
+        "watch": "yarn run build && yarn link && nodemon",
+        "build": "rimraf ./dist && tsc",
+        "prepublishOnly": "yarn run lint && yarn run build"
+    },
+    "keywords": [
+        "vestel",
+        "tv",
+        "api"
+    ],
+    "devDependencies": {
+        "@types/node": "^14.0.1",
+        "@types/node-ssdp": "^3",
+        "@typescript-eslint/eslint-plugin": "^2.33",
+        "@typescript-eslint/parser": "^2.33",
+        "eslint": "^6.8.0",
+        "local-devices": "^4.0.0",
+        "lodash": "^4",
+        "node-ssdp": "^4",
+        "nodemon": "^2.0.4",
+        "rimraf": "^3.0.2",
+        "ts-node": "^8.10.1",
+        "typed-rest-client": "^1",
+        "typescript": "^3.9.2",
+        "wol": "^1",
+        "xml-js": "^1"
+    }
 }
