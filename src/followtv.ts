@@ -39,7 +39,7 @@ export class FollowTv {
      * Connect socket.
      * @param callback Callback.
      */
-    protected async connectSocket(callback): Promise<any> {
+    protected async connectSocket(callback): Promise<unknown> {
         const promise = new Promise((resolve, reject) => {
             const socket = new Socket();
             socket.setTimeout(this.SOCKET_TIMEOUT);
@@ -49,7 +49,7 @@ export class FollowTv {
                 if (error) return reject(error);
 
                 let called = false;
-                const callback2 = (error, data?) => {
+                const callback2 = (error, data?): void => {
                     if (called) return;
                     called = true;
 

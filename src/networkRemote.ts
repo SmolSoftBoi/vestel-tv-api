@@ -24,7 +24,7 @@ export class NetworkRemote {
      * @param callback Callback.
      * @param timeout Timeout.
      */
-    async connectSocket(callback, timeout = this.SOCKET_TIMEOUT): Promise<any> {
+    async connectSocket(callback?, timeout = this.SOCKET_TIMEOUT): Promise<unknown> {
         const promise = new Promise((resolve, reject) => {
             const socket = new Socket();
             socket.setTimeout(timeout);
@@ -34,7 +34,7 @@ export class NetworkRemote {
                 if (error) return reject(error);
 
                 let called = false;
-                const callback2 = (error, data?) => {
+                const callback2 = (error, data?): void => {
                     if (called) return;
                     called = true;
 

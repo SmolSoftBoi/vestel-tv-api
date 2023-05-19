@@ -82,7 +82,9 @@ export class VestelTv extends EventEmitter {
         if (!this.context.mac) {
             try {
                 this.findMac();
-            } catch (error) {}
+            } catch (error) {
+                console.error(error);
+            }
         }
     }
 
@@ -95,7 +97,7 @@ export class VestelTv extends EventEmitter {
 
         try {
             await Promise.race([
-                this.networkRemote.connectSocket(() => {}),
+                this.networkRemote.connectSocket(),
                 new Promise((resolve, reject) => {
                     setTimeout(reject, 2000);
                 })
