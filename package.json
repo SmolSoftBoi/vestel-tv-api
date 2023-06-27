@@ -33,7 +33,7 @@
         "local-devices": "^4.0.0",
         "lodash": "^4",
         "node-ssdp": "^4",
-        "nodemon": "^2.0.4",
+        "nodemon": "^2.0.22",
         "rimraf": "^3.0.2",
         "ts-node": "^8.10.1",
         "typed-rest-client": "^1",
