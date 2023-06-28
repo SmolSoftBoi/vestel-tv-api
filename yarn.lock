@@ -78,10 +78,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.12.tgz#d70faba7039d5fca54c83c7dbab41051d2b6f6cb"
   integrity sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==
 
-"@types/node-ssdp@^3":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@types/node-ssdp/-/node-ssdp-3.3.1.tgz#425dc7c0152d5e598e59babfc779ba7cb157aff9"
-  integrity sha512-mn4ZOdKM/pgAKl7K50g97/2UnwLyQxuSweM4+1JUaUS7n2LnVHTFDJx8xk0NVyBXPYjWxhidCa5YC96k1XLcsA==
+"@types/node-ssdp@^4":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/node-ssdp/-/node-ssdp-4.0.1.tgz#63714d514ee649d6eaeccd7895ff67bf3f4d8894"
+  integrity sha512-w8NEmUjsAG/lKqUY3NOSMsfHz7orFblujp+LeiyxvFHDCEAKxnBTVsLqLLZShvwVQ0/jN5VwCgFGIGo61lirZQ==
   dependencies:
     "@types/node" "*"
 
