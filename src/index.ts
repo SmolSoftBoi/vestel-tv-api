@@ -5,7 +5,7 @@ import { DEFAULT_WAKE_ON_LAN_TIMEOUT, DEFAULT_FOLLOW_TV_PORT, DIAL_SMART_CENTER_
 import { Context } from "./context";
 import { Dial } from "./dial";
 import { SmartCenterDialApp } from "./dialApps/smartCenterDialApp";
-import { SmartCenterKeyCodes } from "./dialApps/SmartCenterKeyCodes";
+import { SmartCenterKeyCodes } from "./dialApps/smartCenterKeyCodes";
 import { FollowTv } from "./followtv";
 import { NetworkRemote } from "./networkRemote";
 

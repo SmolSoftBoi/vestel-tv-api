@@ -1,7 +1,7 @@
 import { URL } from "url";
 
 import { DialApp } from "./dialApp";
-import { SmartCenterKeyCodes } from "./SmartCenterKeyCodes";
+import { SmartCenterKeyCodes } from "./smartCenterKeyCodes";
 
 import { js2xml, ElementCompact } from "xml-js";
 

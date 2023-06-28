@@ -97,7 +97,7 @@ export class FollowTv {
                     buffer += data.toString();
                 });
 
-                await new Promise((resolve, reject) => {
+                await new Promise<void>((resolve, reject) => {
                     socket.on('end', (error) => {
                         if (error) reject(error);
                         resolve();
