@@ -10,7 +10,7 @@
         "url": "https://github.com/EpicKris/vestel-tv-api/issues"
     },
     "engines": {
-        "node": ">=14"
+        "node": "14 >=14.17 || >=16"
     },
     "main": "dist/index.js",
     "scripts": {
