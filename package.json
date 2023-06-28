@@ -25,7 +25,7 @@
         "api"
     ],
     "devDependencies": {
-        "@types/node": "^14.0.1",
+        "@types/node": "^20.3.2",
         "@types/node-ssdp": "^3",
         "@typescript-eslint/eslint-plugin": "^2.33",
         "@typescript-eslint/parser": "^2.33",
@@ -35,9 +35,9 @@
         "node-ssdp": "^4",
         "nodemon": "^2.0.22",
         "rimraf": "^3.0.2",
-        "ts-node": "^8.10.1",
+        "ts-node": "^10.9.1",
         "typed-rest-client": "^1",
-        "typescript": "^3.9.2",
+        "typescript": "^5.1.5",
         "wol": "^1",
         "xml-js": "^1"
     }
