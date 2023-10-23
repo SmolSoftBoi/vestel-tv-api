@@ -96,9 +96,9 @@
   integrity sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==
 
 "@types/node-ssdp@^4":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@types/node-ssdp/-/node-ssdp-4.0.2.tgz#fdfed5eff2e1caf56f7f1081e5262b1d2c9e8dab"
-  integrity sha512-cfziJHYtluh23RxvJFUNpc2s2MRk+zerBY/ma5hQAdBGWOWBTT+9VmypDBOWZGthe9xOIudxLhkUOjapKCc4SA==
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@types/node-ssdp/-/node-ssdp-4.0.3.tgz#60833e04363a55d82cd1a74c37b2bd2f8e2820fd"
+  integrity sha512-h6Rzq2BjqJxsWZcOFrCoh3S6jQtgpga5gXHFfcUKTeV5hdIvdSiojsmIiVI/qWcscF2x8UqH2BesCUwhHrCcKg==
   dependencies:
     "@types/node" "*"
 
