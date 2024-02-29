@@ -1,0 +1,258 @@
+repo_name: SmolSoftBoi/vestel-tv-api
+report_id: 149c68a9de818daa555612641a58fe7e
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T19:29:08+00:00'
+requested_by: SmolSoftBoi
+provider: github
+branch: master
+detected_tools_count: 19
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api
+  detection_source: Repo Metadata
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api
+  detection_source: Repo Metadata
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Kristian Matthews
+  last_updated_on: 2020-05-24 20:08:00.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/.eslintrc
+  detection_source: ".eslintrc"
+  last_updated_by: Kristian Matthews
+  last_updated_on: 2020-05-24 20:08:42.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/.github/workflows/build.yml
+  detection_source: ".github/workflows/build.yml"
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2023-05-19 09:56:22.000000000 Z
+- name: Jest
+  description: Painless JavaScript Unit Testing
+  website_url: http://facebook.github.io/jest/
+  version: 29.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/830/jest.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews
+  last_updated_on: 2020-05-24 20:08:00.000000000 Z
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: yarn.lock
+  last_updated_by: Kristian Matthews
+  last_updated_on: 2020-05-24 20:08:42.000000000 Z
+- name: nodemon
+  description: A simple monitor script for use during development of a node.js app
+  website_url: http://nodemon.io/
+  version: 3.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: node.js Application Monitoring
+  image_url: https://img.stackshare.io/service/5577/preview.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2024-01-01 17:45:19.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Kristian Matthews
+  last_updated_on: 2020-05-24 20:08:00.000000000 Z
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 4.17.21
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2024-01-01 17:45:19.000000000 Z
+- name: "@types/jest"
+  description: TypeScript definitions for Jest
+  package_url: https://www.npmjs.com/@types/jest
+  version: 29.5.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15840/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2024-01-01 17:45:19.000000000 Z
+- name: "@types/node"
+  description: TypeScript definitions for Node.js
+  package_url: https://www.npmjs.com/@types/node
+  version: 20.10.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2024-01-01 17:45:19.000000000 Z
+- name: "@typescript-eslint/eslint-plugin"
+  description: TypeScript plugin for ESLint
+  package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
+  version: 6.18.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2024-01-01 17:45:19.000000000 Z
+- name: "@typescript-eslint/parser"
+  description: An ESLint custom parser which leverages TypeScript ESTree
+  package_url: https://www.npmjs.com/@typescript-eslint/parser
+  version: 6.18.0
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2024-01-01 17:45:19.000000000 Z
+- name: rimraf
+  description: A deep deletion module for node
+  package_url: https://www.npmjs.com/rimraf
+  version: 3.0.2
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15807/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2024-01-01 17:45:19.000000000 Z
+- name: ts-jest
+  description: A preprocessor with source maps support to help use TypeScript with
+    Jest
+  package_url: https://www.npmjs.com/ts-jest
+  version: 29.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15864/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2024-01-01 17:45:19.000000000 Z
+- name: ts-node
+  description: TypeScript execution environment and REPL for node.js
+  package_url: https://www.npmjs.com/ts-node
+  version: 10.9.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2024-01-01 17:45:19.000000000 Z
+- name: xml-js
+  description: A convertor between XML text and Javascript object / JSON text
+  package_url: https://www.npmjs.com/xml-js
+  version: 1.6.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18393/default_dc6769b9772560ba4cb2cd0455560c2922e23c92.png
+  detection_source_url: https://github.com/SmolSoftBoi/vestel-tv-api/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2024-01-01 17:45:19.000000000 Z
