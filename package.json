@@ -26,7 +26,7 @@
     "api"
   ],
   "devDependencies": {
-    "@jest/globals": "^29.7.0",
+    "@jest/globals": "^30.2.0",
     "@types/jest": "^29.5.11",
     "@types/node": "^24.0.3",
     "@types/node-ssdp": "^4",
