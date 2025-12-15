@@ -1106,9 +1106,9 @@
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
 "@types/node-ssdp@^4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@types/node-ssdp/-/node-ssdp-4.0.4.tgz#71c4e1ccbad4c9af8a199888f0a719e6114bb918"
-  integrity sha512-k5gWpZYrNAZ1alW8RoAPaYlk6IYPad92FyeyOk1n2RIdwouNJZ4Ft8Fc2YxFUwty+bBqY4C/fWFEOxdso4jSoA==
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@types/node-ssdp/-/node-ssdp-4.0.5.tgz#60daccb085786c05c6bf6d2a723064f1806e7ea4"
+  integrity sha512-81biErjb57hFXyqp4fjAUp37MO1cGKJz1DYqQRbw3ErU/zExuFTidS3AlPpNVl/o9cqrzMX2gkP1z6rgVI6AJw==
   dependencies:
     "@types/node" "*"
 
