@@ -1,0 +1,125 @@
+name: Vestel TV diagnostics report
+description: Report an unresolved Vestel TV integration issue with structured diagnostics.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Provide the details below so maintainers can reproduce and triage quickly.
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Package version
+      description: Version of `vestel-tv-api` in your project.
+      placeholder: 0.0.1
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node version
+      description: Output from `node -v`.
+      placeholder: v22.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: macOS 15.0, Ubuntu 24.04, Windows 11
+    validations:
+      required: true
+
+  - type: input
+    id: brand
+    attributes:
+      label: TV brand
+      placeholder: Vestel, Toshiba, Hitachi
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: TV model
+      placeholder: 50UA9630
+    validations:
+      required: true
+
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware version
+      placeholder: v3.42.1
+    validations:
+      required: false
+
+  - type: input
+    id: manufacturer
+    attributes:
+      label: tv.context.manufacturer
+      placeholder: Vestel
+    validations:
+      required: false
+
+  - type: input
+    id: discovered-model
+    attributes:
+      label: tv.context.model
+      placeholder: 50UA9630
+    validations:
+      required: false
+
+  - type: input
+    id: uuid
+    attributes:
+      label: tv.context.uuid
+      placeholder: 123e4567-e89b-12d3-a456-426614174000
+    validations:
+      required: false
+
+  - type: input
+    id: host
+    attributes:
+      label: tv.context.host
+      placeholder: 192.168.1.50
+    validations:
+      required: false
+
+  - type: textarea
+    id: discovery-output
+    attributes:
+      label: Discovery output (sanitised)
+      description: Paste discovery logs/output with sensitive data removed.
+      render: json
+      placeholder: |
+        {
+          "host": "192.168.1.50",
+          "uuid": "..."
+        }
+    validations:
+      required: true
+
+  - type: textarea
+    id: failing-action
+    attributes:
+      label: Failing action
+      description: Which method call fails and which input/context is used?
+      placeholder: Called tv.setActive() after discovery with isWakeOnLan=true...
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-output
+    attributes:
+      label: Error output
+      description: Include full error text and stack trace.
+      render: shell
+      placeholder: Error: Error waking TV.
+    validations:
+      required: true

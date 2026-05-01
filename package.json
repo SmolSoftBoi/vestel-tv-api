@@ -4,10 +4,10 @@
   "description": "Vestel TV API.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/EpicKris/vestel-tv-api.git"
+    "url": "https://github.com/SmolSoftBoi/vestel-tv-api.git"
   },
   "bugs": {
-    "url": "https://github.com/EpicKris/vestel-tv-api/issues"
+    "url": "https://github.com/SmolSoftBoi/vestel-tv-api/issues"
   },
   "engines": {
     "node": "20 || >=22"
